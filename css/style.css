@@ -437,6 +437,10 @@ nav a.active{
     transform:scale(1.03);
 }
 
+.about-mobile-image{
+  display:none;
+}
+
 .cards-3{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -1030,8 +1034,25 @@ h2{
     gap:40px;
 }
 
+.about-grid{
+  grid-template-columns:1fr;
+  gap:40px;
+}
+
 .about-image{
-    order:-1;
+  display:none;
+}
+
+.about-mobile-image{
+  display:block;
+  margin:25px 0;
+}
+
+.about-mobile-image img{
+  width:100%;
+  height:350px;
+  object-fit:cover;
+  border-radius:30px;
 }
 
 .about-image img{
