@@ -1174,4 +1174,107 @@ h2{
         height:450px;
     }
 
+  /* =========================
+   ABOUT MOBILE
+========================= */
+
+.about-grid{
+    display:flex;
+    flex-direction:column;
+}
+
+.about-content{
+    display:flex;
+    flex-direction:column;
+}
+
+.about-image{
+    order:2;
+    margin:25px 0;
+}
+
+.about-content h2{
+    order:3;
+}
+
+.about-content .about-intro{
+    order:4;
+}
+
+.tabs{
+    order:5;
+}
+
+.tab-content{
+    order:6;
+}
+
+.about-buttons{
+    order:7;
+}
+
+
+/* =========================
+   SERVICES MOBILE
+========================= */
+
+.services-left{
+    display:flex;
+    flex-direction:column;
+}
+
+.services-content{
+    display:flex;
+    flex-direction:column;
+}
+
+.services-image{
+    order:2;
+    margin:25px 0;
+}
+
+.services-content h2{
+    order:3;
+}
+
+.services-content p{
+    order:4;
+}
+
+.services-content .primary{
+    order:5;
+}
+
+
+/* =========================
+   FAQ MOBILE
+========================= */
+
+.faq-wrapper{
+    display:flex;
+    flex-direction:column;
+}
+
+.faq-content{
+    display:flex;
+    flex-direction:column;
+}
+
+.faq-image{
+    order:2;
+    margin:25px 0;
+}
+
+.faq-content h2{
+    order:3;
+}
+
+.faq-intro{
+    order:4;
+}
+
+.faq-accordion{
+    order:5;
+}
+
 }
