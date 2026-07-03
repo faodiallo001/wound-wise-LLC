@@ -1006,6 +1006,8 @@ h2{
     padding:60px 0;
 }
 
+  
+
   .hero-grid,
   .split,
   .cards-3,
@@ -1022,6 +1024,20 @@ h2{
   h2{
     font-size:32px;
   }
+
+  .about-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+}
+
+.about-image{
+    order:-1;
+}
+
+.about-image img{
+    height:350px;
+    object-fit:cover;
+}
 
   .hero{
     padding:60px 0;
