@@ -350,6 +350,11 @@ nav a.active{
     display:block;
 }
 
+.about-section{
+    margin-top:120px;
+    padding:80px 0;
+}
+
 .about-grid{
 
     display:grid;
