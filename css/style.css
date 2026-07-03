@@ -974,7 +974,17 @@ linear-gradient(
 
   .hero-slider{
     width:100%;
-    opacity:.1;
+   
+}
+
+  .hero-slider img{
+    mask-image:none;
+    -webkit-mask-image:none;
+}
+
+  .hero-slider{
+    width:100%;
+    height:100%;
 }
 
 .hero-grid{
