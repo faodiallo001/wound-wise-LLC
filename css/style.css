@@ -885,11 +885,24 @@ linear-gradient(
 
 .faq-answer{
 
-    padding:0 25px 25px;
+    max-height:0;
+
+    overflow:hidden;
+
+    padding:0 25px;
 
     color:#64748b;
 
     line-height:1.8;
+
+    transition:.4s ease;
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:200px;
+
+    padding:0 25px 25px;
 }
 
 
