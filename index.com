@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WoundWise LLC</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <img src="images/logo.png" alt="WoundWise LLC" class="logo" />
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#specialist">Talk to a Specialist</a>
+      <a href="#referrals">Referrals</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <a href="tel:6317209309" class="call-btn">📞 Call</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">WoundWise LLC</span>
+      <h1>Professional In-Home Wound Care Services</h1>
+      <p>
+        Expert wound care delivered in the comfort of your home for patients in
+        New York City and Long Island.
+      </p>
+      <div class="buttons">
+        <a href="#specialist" class="btn primary">Talk to a Specialist</a>
+        <a href="#contact" class="btn secondary">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="images/hero.jpg" alt="In-home wound care service" />
+    </div>
+  </div>
+</section>
+
+<section class="intro" id="about">
+  <div class="container cards-3">
+    <div class="info-card">
+      <h3>Our Vision</h3>
+      <p>To make expert wound care accessible, compassionate, and convenient for every patient at home.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Our Mission</h3>
+      <p>To improve healing outcomes through personalized care, professional treatment, and continuous support.</p>
+    </div>
+
+    <div class="info-card">
+      <h3>Our Values</h3>
+      <p>Compassion, excellence, integrity, and commitment guide every patient interaction.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about-more">
+  <div class="container split">
+    <div>
+      <span class="section-label">More About Us</span>
+      <h2>Professional Wound Care Delivered to Your Door</h2>
+      <p>
+        WoundWise LLC provides specialized in-home wound care services for patients
+        throughout New York City and Long Island. Our care is focused on comfort,
+        safety, and better healing outcomes.
+      </p>
+      <a href="#contact" class="btn primary">Call Us</a>
+    </div>
+
+    <div class="about-box">
+      <h3>Need wound care at home?</h3>
+      <p>Call us today to speak with our team.</p>
+      <a href="tel:6317209309">(631) 720-9309</a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <span class="section-label">Our Approach</span>
+    <h2>Personalized Care for Better Healing</h2>
+
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Personalized Care Plans</h3>
+        <p>Every plan is tailored to the patient’s condition, needs, and healing goals.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Evidence-Based Treatments</h3>
+        <p>We use proven wound care methods to support safer and faster healing.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Prevention and Early Intervention</h3>
+        <p>Early care helps reduce complications and support better recovery.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Continuous Monitoring and Follow-Up</h3>
+        <p>We track healing progress and adjust care when needed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="referral" id="referrals">
+  <div class="container referral-box">
+    <h2>Know Someone With Slow-Healing Wounds?</h2>
+    <p>Refer them today for expert in-home wound care services.</p>
+    <a href="#contact" class="btn white">Referrals</a>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <span class="section-label">Frequently Asked Questions</span>
+    <h2>Common Questions</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>Do you provide wound care at home?</h3>
+        <p>Yes. We provide professional wound care services in the patient’s home.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What types of wounds do you treat?</h3>
+        <p>We treat trauma wounds, pressure-related wounds, circulation-related wounds, and specialized wounds.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What areas do you serve?</h3>
+        <p>We serve New York City and Long Island.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How can I contact WoundWise LLC?</h3>
+        <p>You can call us directly at (631) 720-9309.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="container footer-grid">
+
+    <div>
+      <img src="images/logo.png" alt="WoundWise LLC" class="footer-logo" />
+      <p>
+        Professional in-home wound care services for patients in New York City
+        and Long Island.
+      </p>
+    </div>
+
+    <div>
+      <h3>Contact Us</h3>
+      <p>📞 (631) 720-9309</p>
+      <p>📧 info@woundwisellc.com</p>
+      <p>🕒 Visit Hours: Monday - Friday, 8:00 AM - 6:00 PM</p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#specialist">Talk to a Specialist</a>
+      <a href="#referrals">Referrals</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+
+    <div>
+      <h3>Service Links</h3>
+      <a href="#">Trauma Wounds</a>
+      <a href="#">Pressure Related Wounds</a>
+      <a href="#">Circulation Related Wounds</a>
+      <a href="#">Specialized Wound Care</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 WoundWise LLC. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
