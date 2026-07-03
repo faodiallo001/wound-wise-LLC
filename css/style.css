@@ -300,6 +300,43 @@ nav a.active{
     margin-bottom:35px;
 }
 
+.section-tag{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:12px 24px;
+
+    border-radius:999px;
+
+    background:rgba(22,77,168,.08);
+
+    border:1px solid rgba(22,77,168,.15);
+
+    color:#164da8;
+
+    font-weight:700;
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    box-shadow:
+    0 8px 25px rgba(22,77,168,.08);
+
+    margin-bottom:30px;
+}
+
+.section-tag:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 12px 30px rgba(22,77,168,.15);
+
+    transition:.3s ease;
+}
+
 .about-buttons{
     display:flex;
     gap:18px;
