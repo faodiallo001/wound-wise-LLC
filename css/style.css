@@ -100,8 +100,16 @@ nav a:hover{
 
 
 .hero{
-  padding:90px 0;
-  background:linear-gradient(135deg,#f4f8ff,#ffffff);
+    position:relative;
+    overflow:hidden;
+
+    padding:90px 0;
+
+    background:linear-gradient(
+        135deg,
+        #f4f8ff,
+        #ffffff
+    );
 }
 
 .hero-grid{
@@ -211,11 +219,6 @@ nav a.active{
     border-radius:999px;
 }
 
-
-.hero{
-    position:relative;
-    overflow:hidden;
-}
 
 .hero-slider{
     position:absolute;
