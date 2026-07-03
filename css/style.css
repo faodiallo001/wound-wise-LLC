@@ -656,29 +656,6 @@ linear-gradient(
     color:#ff214f;
 }
 
-/* MOBILE */
-
-@media(max-width:950px){
-
-    .services-layout{
-
-        grid-template-columns:1fr;
-    }
-
-    .service-item{
-
-        flex-direction:column;
-
-        text-align:center;
-    }
-
-    .service-item img{
-
-        width:140px;
-        height:140px;
-    }
-
-}
 
 
 /* =========================
@@ -790,44 +767,9 @@ linear-gradient(
 
 /* TABLET */
 
-@media(max-width:950px){
-
-    .approach-grid{
-        grid-template-columns:1fr;
-    }
-
-    .approach-card{
-        padding:35px;
-    }
-}
 
 /* MOBILE */
 
-@media(max-width:600px){
-
-    .approach-section{
-        padding:80px 0;
-    }
-
-    .approach-card img{
-
-        width:130px;
-        height:130px;
-    }
-
-    .approach-number{
-
-        width:60px;
-        height:60px;
-
-        font-size:18px;
-    }
-
-    .approach-card h3{
-
-        font-size:24px;
-    }
-}
 
 .faq{
   padding:80px 0;
@@ -1034,4 +976,53 @@ h2{
 
         justify-content:center;
     }
+
+  .services-layout{
+
+        grid-template-columns:1fr;
+    }
+
+    .service-item{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .service-item img{
+
+        width:140px;
+        height:140px;
+    }
+   .approach-grid{
+        grid-template-columns:1fr;
+    }
+
+    .approach-card{
+        padding:35px;
+    }
+
+  .approach-section{
+        padding:80px 0;
+    }
+
+    .approach-card img{
+
+        width:130px;
+        height:130px;
+    }
+
+    .approach-number{
+
+        width:60px;
+        height:60px;
+
+        font-size:18px;
+    }
+
+    .approach-card h3{
+
+        font-size:24px;
+    }
+
 }
