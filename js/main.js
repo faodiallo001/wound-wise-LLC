@@ -58,20 +58,23 @@ const faqItems = document.querySelectorAll('.faq-item');
 faqItems.forEach(item => {
 
     const button = item.querySelector('.faq-question');
-    const icon = item.querySelector('span');
 
     button.addEventListener('click', () => {
 
+        faqItems.forEach(other => {
+
+            if(other !== item){
+
+                other.classList.remove('active');
+                other.querySelector('span').textContent = '+';
+            }
+
+        });
+
         item.classList.toggle('active');
 
-        if(item.classList.contains('active')){
-
-            icon.textContent = '−';
-
-        } else {
-
-            icon.textContent = '+';
-        }
+        item.querySelector('span').textContent =
+        item.classList.contains('active') ? '−' : '+';
 
     });
 
