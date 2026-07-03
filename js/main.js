@@ -52,3 +52,27 @@ menuToggle.addEventListener("click", () => {
 mobileMenu.classList.toggle("active");
 
 });
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+
+    const button = item.querySelector('.faq-question');
+    const icon = item.querySelector('span');
+
+    button.addEventListener('click', () => {
+
+        item.classList.toggle('active');
+
+        if(item.classList.contains('active')){
+
+            icon.textContent = '−';
+
+        } else {
+
+            icon.textContent = '+';
+        }
+
+    });
+
+});
