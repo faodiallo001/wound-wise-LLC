@@ -295,6 +295,11 @@ nav a.active{
   margin-top:120px;
 }
 
+.section-tag{
+    display:inline-block;
+    margin-bottom:35px;
+}
+
 .about-buttons{
     display:flex;
     gap:18px;
