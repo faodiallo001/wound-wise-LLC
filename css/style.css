@@ -671,6 +671,155 @@ linear-gradient(
 
 }
 
+
+/* =========================
+   APPROACH SECTION
+========================= */
+
+.approach-section{
+    padding:120px 0;
+    background:white;
+}
+
+.approach-header{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 80px;
+}
+
+.approach-header h2{
+    margin:20px 0;
+}
+
+.approach-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.approach-card{
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 45px rgba(0,0,0,.06);
+
+    transition:.4s ease;
+
+    border:1px solid #edf2f7;
+}
+
+.approach-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 25px 60px rgba(22,77,168,.12);
+}
+
+.approach-card img{
+
+    width:160px;
+    height:160px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    margin-bottom:25px;
+}
+
+.approach-number{
+
+    width:70px;
+    height:70px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:22px;
+    font-weight:800;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #ff214f,
+        #d90429
+    );
+
+    box-shadow:
+    0 10px 30px rgba(217,4,41,.35);
+}
+
+.approach-card h3{
+
+    color:#0b2d5c;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+}
+
+.approach-card p{
+
+    color:#64748b;
+
+    line-height:1.8;
+}
+
+/* TABLET */
+
+@media(max-width:950px){
+
+    .approach-grid{
+        grid-template-columns:1fr;
+    }
+
+    .approach-card{
+        padding:35px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .approach-section{
+        padding:80px 0;
+    }
+
+    .approach-card img{
+
+        width:130px;
+        height:130px;
+    }
+
+    .approach-number{
+
+        width:60px;
+        height:60px;
+
+        font-size:18px;
+    }
+
+    .approach-card h3{
+
+        font-size:24px;
+    }
+}
+
 .faq{
   padding:80px 0;
   background:#f8fafc;
