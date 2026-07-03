@@ -11,3 +11,32 @@ setInterval(() => {
     slides[current].classList.add('active');
 
 }, 5000);
+
+
+const tabs = document.querySelectorAll('.tab-btn');
+
+tabs.forEach(tab => {
+
+    tab.addEventListener('click', () => {
+
+        document
+        .querySelectorAll('.tab-btn')
+        .forEach(btn =>
+            btn.classList.remove('active'));
+
+        document
+        .querySelectorAll('.tab-panel')
+        .forEach(panel =>
+            panel.classList.remove('active'));
+
+        tab.classList.add('active');
+
+        document
+        .getElementById(
+            tab.dataset.tab
+        )
+        .classList.add('active');
+
+    });
+
+});
