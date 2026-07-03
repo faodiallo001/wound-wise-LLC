@@ -24,6 +24,15 @@ body{
   z-index:1000;
 }
 
+.desktop-nav{
+    display:flex;
+    gap:24px;
+}
+
+.desktop-call{
+    display:inline-flex;
+}
+
 .nav{
   display:flex;
   align-items:center;
@@ -983,6 +992,14 @@ linear-gradient(
 .hero-content{
     position:relative;
     z-index:10;
+}
+
+  .desktop-nav{
+    display:none;
+}
+
+.desktop-call{
+    display:none;
 }
 
 .logo{
