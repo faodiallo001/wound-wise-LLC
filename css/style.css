@@ -51,14 +51,53 @@ nav a:hover{
   color:#0b63ce;
 }
 
-.call-btn{
-  background:#d62828;
+.call-btn,
+.primary{
+
+  position:relative;
+  overflow:hidden;
+
+  background:linear-gradient(
+    135deg,
+    #ff214f,
+    #d90429
+  );
+
   color:white;
+
   text-decoration:none;
-  padding:12px 22px;
-  border-radius:30px;
+
+  padding:15px 30px;
+
+  border-radius:999px;
+
   font-weight:700;
+
+  border:1px solid rgba(255,255,255,.15);
+
+  backdrop-filter:blur(20px);
+
+  box-shadow:
+  0 10px 30px rgba(255,33,79,.35);
+
+  transition:.4s ease;
 }
+
+.call-btn:hover,
+.primary:hover{
+
+  transform:translateY(-4px);
+
+  background:linear-gradient(
+    135deg,
+    #ff4d73,
+    #ff214f
+  );
+
+  box-shadow:
+  0 20px 45px rgba(255,33,79,.55);
+}
+
 
 .hero{
   padding:90px 0;
@@ -116,16 +155,19 @@ p{
   font-weight:700;
 }
 
-.primary{
-  background:#0b63ce;
-  color:white;
-}
+
 
 .secondary{
-  border:2px solid #0b63ce;
-  color:#0b63ce;
+  border:2px solid #d90429;
+  color:#d90429;
+  background:white;
+  transition:.3s;
 }
 
+.secondary:hover{
+  background:#d90429;
+  color:white;
+}
 .white{
   background:white;
   color:#0b63ce;
