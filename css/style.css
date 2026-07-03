@@ -959,16 +959,47 @@ linear-gradient(
     }
 }
 
-@media(max-width:950px){
-  .nav{
-    flex-direction:column;
-    gap:20px;
-  }
 
-  nav{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
+
+@media(max-width:950px){
+ .hero-grid,
+.split,
+.cards-3,
+.service-grid,
+.faq-list,
+.footer-grid{
+    grid-template-columns:1fr;
+}
+
+  .hero-slider{
+    width:100%;
+    opacity:.35;
+}
+
+.hero-grid{
+    grid-template-columns:1fr;
+}
+
+.hero-content{
+    position:relative;
+    z-index:10;
+}
+
+.logo{
+    width:120px;
+}
+
+h1{
+    font-size:40px;
+}
+
+h2{
+    font-size:32px;
+}
+
+.hero{
+    padding:60px 0;
+}
 
   .hero-grid,
   .split,
