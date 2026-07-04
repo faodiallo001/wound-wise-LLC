@@ -1664,6 +1664,279 @@ SERVICES PAGE
     }
 }
 
+/* =========================
+SPECIALIST PAGE
+========================= */
+
+.specialist-intro{
+    padding:100px 0 50px;
+}
+
+.specialist-section{
+    padding:0 0 120px;
+}
+
+.specialist-grid{
+
+    display:grid;
+
+    grid-template-columns:1.4fr .8fr;
+
+    gap:50px;
+
+    align-items:start;
+}
+
+/* FORM */
+
+.specialist-form{
+
+    background:
+    rgba(255,255,255,.65);
+
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(217,4,41,.15);
+
+    border-radius:35px;
+
+    padding:50px;
+
+    box-shadow:
+    0 25px 60px rgba(217,4,41,.08);
+}
+
+.specialist-form h3{
+
+    margin-bottom:35px;
+
+    color:#0b2d5c;
+}
+
+.specialist-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.specialist-form input,
+.specialist-form select,
+.specialist-form textarea{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(11,99,206,.12);
+
+    background:white;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+.specialist-form input:focus,
+.specialist-form select:focus,
+.specialist-form textarea:focus{
+
+    border-color:#d90429;
+
+    box-shadow:
+    0 0 0 4px rgba(217,4,41,.08);
+}
+
+.specialist-form textarea{
+
+    resize:none;
+}
+
+/* CHECKBOXES */
+
+.checkbox-group{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:10px;
+}
+
+.checkbox-group label{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+
+    font-weight:500;
+}
+
+/* RADIO */
+
+.radio-group{
+
+    display:flex;
+
+    gap:30px;
+
+    margin-bottom:10px;
+}
+
+.radio-group label{
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+}
+
+/* SIDEBAR */
+
+.specialist-info{
+
+    position:sticky;
+
+    top:120px;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(11,99,206,.10),
+    rgba(217,4,41,.10)
+    );
+
+    backdrop-filter:blur(30px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    border-radius:35px;
+
+    padding:45px;
+
+    box-shadow:
+    0 25px 60px rgba(11,99,206,.10);
+}
+
+.specialist-info h3{
+
+    margin-bottom:30px;
+
+    color:#0b2d5c;
+}
+
+.benefit-item{
+
+    padding:18px 20px;
+
+    margin-bottom:15px;
+
+    border-radius:18px;
+
+    background:
+    rgba(255,255,255,.45);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    font-weight:600;
+
+    color:#0b2d5c;
+}
+
+/* HERO IMAGE */
+
+.specialist-hero{
+
+    background:
+    linear-gradient(
+    rgba(11,45,92,.40),
+    rgba(11,45,92,.80)
+    ),
+    url("../images/specialist-hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+}
+
+/* =========================
+SPECIALIST MOBILE
+========================= */
+
+@media(max-width:991px){
+
+.specialist-grid{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+}
+
+.specialist-info{
+
+    position:relative;
+
+    top:auto;
+}
+
+.specialist-form{
+
+    padding:35px;
+}
+
+.checkbox-group{
+
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.specialist-intro{
+    padding:70px 0 30px;
+}
+
+.specialist-section{
+    padding:0 0 80px;
+}
+
+.specialist-form{
+
+    padding:25px;
+}
+
+.specialist-info{
+
+    padding:30px;
+}
+
+.specialist-form input,
+.specialist-form select,
+.specialist-form textarea{
+
+    padding:16px;
+}
+
+.benefit-item{
+
+    padding:15px;
+}
+
+}
+
 
 @media(max-width:950px){
  .hero-grid,
