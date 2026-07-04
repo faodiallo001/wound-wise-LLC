@@ -1449,6 +1449,221 @@ CTA
     margin-bottom:35px;
 }
 
+/* =========================
+SERVICES PAGE
+========================= */
+
+.services-page-hero{
+    padding:120px 0 80px;
+}
+
+.services-hero-card{
+    min-height:500px;
+    padding:60px;
+    border-radius:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    overflow:hidden;
+
+    background:
+    linear-gradient(rgba(11,45,92,.25), rgba(11,45,92,.75)),
+    url("../images/services-hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    box-shadow:0 30px 80px rgba(11,99,206,.18);
+}
+
+.services-hero-card h1{
+    color:white;
+    font-size:64px;
+}
+
+.services-hours-card{
+    margin-top:-70px;
+    margin-left:auto;
+    max-width:520px;
+
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(25px);
+    -webkit-backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:35px;
+    padding:35px;
+
+    box-shadow:0 25px 60px rgba(11,99,206,.15);
+}
+
+.services-page-intro{
+    padding:100px 0 60px;
+    text-align:center;
+}
+
+.services-page-intro p{
+    max-width:850px;
+    margin:auto;
+}
+
+.services-page-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.services-page-list{
+    padding:60px 0 120px;
+}
+
+.service-page-card{
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,.88),
+        rgba(255,228,233,.72)
+    );
+
+    backdrop-filter:blur(28px);
+    -webkit-backdrop-filter:blur(28px);
+
+    border:1px solid rgba(217,4,41,.12);
+    border-radius:38px;
+    padding:30px;
+
+    box-shadow:0 25px 70px rgba(217,4,41,.10);
+
+    transition:.4s ease;
+}
+
+.service-page-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 35px 90px rgba(217,4,41,.18);
+}
+
+.service-page-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:28px;
+    margin-bottom:28px;
+}
+
+.service-number{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:linear-gradient(135deg,#ff214f,#d90429);
+    color:white;
+    font-size:22px;
+    font-weight:800;
+
+    box-shadow:0 12px 35px rgba(217,4,41,.35);
+    margin-bottom:22px;
+}
+
+.service-page-card h3{
+    color:#0b2d5c;
+    font-size:30px;
+    margin-bottom:18px;
+}
+
+.service-page-card p{
+    margin-bottom:22px;
+}
+
+.service-page-card a{
+    color:#d90429;
+    font-weight:800;
+    text-decoration:none;
+}
+
+/* PROCESS */
+
+.services-process{
+    padding:120px 0;
+    background:linear-gradient(180deg,#ffffff,#f8fbff);
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-top:60px;
+}
+
+.process-card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(11,99,206,.10);
+    border-radius:30px;
+    padding:35px;
+
+    box-shadow:0 20px 60px rgba(11,99,206,.08);
+    transition:.4s ease;
+}
+
+.process-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 30px 80px rgba(11,99,206,.15);
+}
+
+.process-card span{
+    color:#d90429;
+    font-size:28px;
+    font-weight:900;
+}
+
+.process-card h3{
+    color:#0b2d5c;
+    margin:18px 0 12px;
+}
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+    .services-page-hero{
+        padding:70px 0;
+    }
+
+    .services-hero-card{
+        min-height:360px;
+        padding:30px;
+    }
+
+    .services-hero-card h1{
+        font-size:42px;
+    }
+
+    .services-hours-card{
+        margin-top:30px;
+        margin-left:0;
+    }
+
+    .services-page-grid,
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-page-card img{
+        height:240px;
+    }
+
+    .services-page-intro,
+    .services-page-list,
+    .services-process{
+        padding:80px 0;
+    }
+}
+
 
 @media(max-width:950px){
  .hero-grid,
