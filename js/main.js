@@ -79,3 +79,48 @@ faqItems.forEach(item => {
     });
 
 });
+
+
+const cards = document.querySelectorAll('.vision-card');
+
+const nextBtn = document.getElementById('nextSlide');
+const prevBtn = document.getElementById('prevSlide');
+
+let current = 0;
+
+function showCard(index){
+
+cards.forEach(card => {
+card.classList.remove('active');
+});
+
+cards[index].classList.add('active');
+}
+
+if(nextBtn && prevBtn){
+
+nextBtn.addEventListener('click', () => {
+
+current++;
+
+if(current >= cards.length){
+current = 0;
+}
+
+showCard(current);
+
+});
+
+prevBtn.addEventListener('click', () => {
+
+current--;
+
+if(current < 0){
+current = cards.length - 1;
+}
+
+showCard(current);
+
+});
+
+}
