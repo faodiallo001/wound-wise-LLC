@@ -965,8 +965,9 @@ linear-gradient(
 .contact-hero .hero-content{
     padding-top:60px;
 }
+
 .contact-section{
-    padding-bottom:100px;
+    padding:100px 0 120px;
 }
 
 .contact-form{
