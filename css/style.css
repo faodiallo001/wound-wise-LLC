@@ -774,12 +774,6 @@ linear-gradient(
     line-height:1.8;
 }
 
-/* TABLET */
-
-
-/* MOBILE */
-
-
 /* =========================
    FAQ SECTION
 ========================= */
@@ -1149,6 +1143,295 @@ linear-gradient(
 }
 
 
+/* =========================
+ABOUT PAGE HERO
+========================= */
+
+.about-page-hero{
+    padding:120px 0 80px;
+}
+
+.about-hero-card{
+
+    position:relative;
+
+    min-height:500px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    padding:60px;
+
+    border-radius:40px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+    rgba(11,45,92,.35),
+    rgba(11,45,92,.75)
+    ),
+    url("../images/about-hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.about-hero-card h1{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:64px;
+}
+
+.breadcrumb{
+
+    display:flex;
+    gap:12px;
+
+    color:white;
+
+    font-size:18px;
+}
+
+.breadcrumb a{
+
+    color:white;
+    text-decoration:none;
+}
+
+.about-hours-card{
+
+    margin-top:-70px;
+
+    margin-left:auto;
+
+    max-width:520px;
+
+    background:
+    rgba(255,255,255,.75);
+
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    border-radius:35px;
+
+    padding:35px;
+
+    box-shadow:
+    0 25px 60px rgba(11,99,206,.15);
+}
+
+.hours-row{
+
+    display:flex;
+    gap:18px;
+    align-items:center;
+}
+
+.hours-icon{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+    rgba(217,4,41,.08);
+
+    font-size:28px;
+}
+
+/* =========================
+ABOUT STORY
+========================= */
+
+.about-story{
+    padding:120px 0;
+}
+
+.about-story-grid{
+
+    display:grid;
+
+    grid-template-columns:.8fr 1.2fr;
+
+    gap:80px;
+
+    align-items:center;
+}
+
+.experience-box{
+
+    padding:50px;
+
+    border-radius:40px;
+
+    background:
+    rgba(11,99,206,.06);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(11,99,206,.12);
+
+    text-align:center;
+}
+
+.experience-box h2{
+
+    font-size:120px;
+
+    color:#0b63ce;
+
+    margin-bottom:15px;
+}
+
+.experience-box p{
+
+    font-size:24px;
+
+    font-weight:600;
+}
+
+.shield-icon{
+
+    font-size:50px;
+
+    margin-bottom:25px;
+}
+
+/* =========================
+IMAGE
+========================= */
+
+.about-wide-image{
+    padding-bottom:120px;
+}
+
+.about-wide-image img{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:40px;
+}
+
+/* =========================
+VISION MISSION VALUES
+========================= */
+
+.values-card{
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(11,99,206,.9),
+    rgba(217,4,41,.85)
+    );
+
+    padding:90px 70px;
+
+    border-radius:45px;
+
+    text-align:center;
+
+    color:white;
+
+    margin-bottom:120px;
+
+    box-shadow:
+    0 30px 80px rgba(11,99,206,.25);
+}
+
+.values-card h2{
+
+    color:white;
+
+    font-size:60px;
+
+    margin-bottom:30px;
+}
+
+.values-card p{
+
+    color:white;
+
+    font-size:28px;
+
+    line-height:1.8;
+}
+
+.value-controls{
+
+    margin-top:50px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.value-controls button{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:24px;
+}
+
+/* =========================
+CTA
+========================= */
+
+.about-final-cta{
+
+    padding:120px 0;
+
+    background:
+    linear-gradient(
+    135deg,
+    #0b63ce,
+    #0b2d5c
+    );
+
+    text-align:center;
+}
+
+.about-final-cta h2{
+
+    color:white;
+
+    margin-bottom:25px;
+}
+
+.about-final-cta p{
+
+    color:white;
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+}
+
+
 @media(max-width:950px){
  .hero-grid,
 .split,
@@ -1413,6 +1696,63 @@ h2{
         height:250px;
     }
 
+.about-page-hero{
+    padding:70px 0;
+}
 
-  
+.about-hero-card{
+
+    min-height:350px;
+
+    padding:30px;
+}
+
+.about-hero-card h1{
+    font-size:42px;
+}
+
+.about-hours-card{
+
+    margin-top:30px;
+    margin-left:0;
+}
+
+.about-story-grid{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+}
+
+.experience-box h2{
+
+    font-size:80px;
+}
+
+.about-wide-image img{
+
+    height:350px;
+}
+
+.values-card{
+
+    padding:50px 30px;
+}
+
+.values-card h2{
+
+    font-size:42px;
+}
+
+.values-card p{
+
+    font-size:20px;
+}
+
+.about-final-cta{
+
+    padding:80px 0;
+}
+
+
 }
