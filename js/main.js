@@ -80,47 +80,30 @@ faqItems.forEach(item => {
 
 });
 
+const visionCards = document.querySelectorAll('.vision-card');
+const nextVisionBtn = document.getElementById('nextSlide');
+const prevVisionBtn = document.getElementById('prevSlide');
 
-const cards = document.querySelectorAll('.vision-card');
+let visionCurrent = 0;
 
-const nextBtn = document.getElementById('nextSlide');
-const prevBtn = document.getElementById('prevSlide');
+function showVisionCard(index){
+    visionCards.forEach(card => {
+        card.classList.remove('active');
+    });
 
-let current = 0;
-
-function showCard(index){
-
-cards.forEach(card => {
-card.classList.remove('active');
-});
-
-cards[index].classList.add('active');
+    visionCards[index].classList.add('active');
 }
 
-if(nextBtn && prevBtn){
+if(nextVisionBtn && prevVisionBtn && visionCards.length > 0){
 
-nextBtn.addEventListener('click', () => {
+    nextVisionBtn.addEventListener('click', function(){
+        visionCurrent = (visionCurrent + 1) % visionCards.length;
+        showVisionCard(visionCurrent);
+    });
 
-current++;
-
-if(current >= cards.length){
-current = 0;
-}
-
-showCard(current);
-
-});
-
-prevBtn.addEventListener('click', () => {
-
-current--;
-
-if(current < 0){
-current = cards.length - 1;
-}
-
-showCard(current);
-
-});
+    prevVisionBtn.addEventListener('click', function(){
+        visionCurrent = (visionCurrent - 1 + visionCards.length) % visionCards.length;
+        showVisionCard(visionCurrent);
+    });
 
 }
