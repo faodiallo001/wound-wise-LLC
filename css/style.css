@@ -970,6 +970,30 @@ linear-gradient(
     padding:100px 0 120px;
 }
 
+.contact-header-image{
+    margin:35px 0;
+}
+
+.contact-header-image img{
+
+    width:100%;
+
+    max-width:900px;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:35px;
+
+    display:block;
+
+    margin:auto;
+
+    box-shadow:
+    0 25px 60px rgba(11,45,92,.12);
+}
+
 .contact-form{
 
     background:white;
@@ -1383,6 +1407,12 @@ h2{
     .contact-grid{
         grid-template-columns:1fr;
     }
+
+    .contact-header-image img{
+
+        height:250px;
+    }
+
 
   
 }
