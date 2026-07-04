@@ -1783,6 +1783,21 @@ SPECIALIST PAGE
     font-weight:500;
 }
 
+.checkbox-group input,
+.radio-group input{
+
+    width:auto !important;
+    height:auto !important;
+
+    min-width:auto !important;
+
+    display:inline-block;
+
+    flex:none;
+
+    margin:0;
+}
+
 /* RADIO */
 
 .radio-group{
@@ -1898,9 +1913,23 @@ SPECIALIST MOBILE
 
 .checkbox-group{
 
-    grid-template-columns:1fr;
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
 }
 
+.checkbox-group label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    justify-content:flex-start;
+}
 }
 
 @media(max-width:768px){
