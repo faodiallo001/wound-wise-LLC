@@ -1664,6 +1664,291 @@ SERVICES PAGE
     }
 }
 
+
+/* =========================
+REFERRALS PAGE
+========================= */
+
+.referrals-hero{
+background:
+linear-gradient(
+rgba(5,15,35,.55),
+rgba(5,15,35,.75)
+),
+url("../images/referrals-hero.jpg")
+center/cover;
+min-height:420px;
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+padding:60px;
+border-radius:30px;
+color:#fff;
+}
+
+.referral-intro{
+padding:100px 0;
+}
+
+.referral-benefits{
+padding:100px 0;
+background:#f8fafc;
+}
+
+.benefits-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:60px;
+}
+
+.benefit-card{
+background:rgba(255,255,255,.65);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.7);
+padding:35px;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.benefit-card:hover{
+transform:translateY(-8px);
+}
+
+.benefit-icon{
+width:70px;
+height:70px;
+border-radius:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+margin-bottom:20px;
+background:linear-gradient(
+135deg,
+#001f54,
+#d90429
+);
+color:#fff;
+}
+
+.benefit-card h3{
+font-size:1.4rem;
+margin-bottom:12px;
+color:#081c3a;
+}
+
+.benefit-card p{
+line-height:1.8;
+color:#667085;
+}
+
+/* FORM */
+
+.referral-form-section{
+padding:100px 0;
+}
+
+.referral-form-section form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.referral-form-section input,
+.referral-form-section select,
+.referral-form-section textarea{
+width:100%;
+padding:18px 22px;
+border-radius:18px;
+border:1px solid #d9dfea;
+font-size:1rem;
+font-family:inherit;
+background:#fff;
+outline:none;
+transition:.3s;
+}
+
+.referral-form-section input:focus,
+.referral-form-section select:focus,
+.referral-form-section textarea:focus{
+border-color:#d90429;
+box-shadow:0 0 0 4px rgba(217,4,41,.08);
+}
+
+.referral-form-section button{
+margin-top:10px;
+}
+
+/* FAQ */
+
+.faq-section{
+padding:100px 0;
+background:#f8fafc;
+}
+
+.faq-item{
+background:#fff;
+border-radius:25px;
+margin-bottom:20px;
+overflow:hidden;
+border:1px solid #e7eaf0;
+box-shadow:0 10px 25px rgba(0,0,0,.04);
+}
+
+.faq-question{
+width:100%;
+background:none;
+border:none;
+padding:28px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:1.2rem;
+font-weight:700;
+cursor:pointer;
+color:#081c3a;
+}
+
+.faq-answer{
+padding:0 30px 30px;
+line-height:1.9;
+color:#667085;
+}
+
+.faq-item:not(.active) .faq-answer{
+display:none;
+}
+
+/* CTA */
+
+.about-final-cta{
+background:
+linear-gradient(
+135deg,
+#001f54,
+#d90429
+);
+color:white;
+padding:100px 0;
+text-align:center;
+}
+
+.about-final-cta h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.about-final-cta p{
+max-width:700px;
+margin:auto;
+margin-bottom:30px;
+font-size:1.1rem;
+line-height:1.8;
+}
+
+.about-final-cta .primary{
+background:white;
+color:#001f54;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:992px){
+
+.benefits-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.referrals-hero{
+padding:40px;
+min-height:350px;
+}
+
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.referral-intro,
+.referral-benefits,
+.referral-form-section,
+.faq-section{
+padding:70px 0;
+}
+
+.benefits-grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.referrals-hero{
+padding:30px;
+min-height:280px;
+border-radius:25px;
+}
+
+.referrals-hero h1{
+font-size:2.4rem;
+}
+
+.benefit-card{
+padding:25px;
+}
+
+.benefit-icon{
+width:60px;
+height:60px;
+font-size:26px;
+}
+
+.faq-question{
+font-size:1rem;
+padding:22px;
+}
+
+.faq-answer{
+padding:0 22px 22px;
+}
+
+.about-final-cta h2{
+font-size:2rem;
+}
+
+.about-final-cta{
+padding:70px 0;
+}
+
+}
+
+
+/* =========================
+SMALL PHONES
+========================= */
+
+@media(max-width:480px){
+
+.referrals-hero h1{
+font-size:2rem;
+}
+
+.benefit-card h3{
+font-size:1.2rem;
+}
+
+.about-final-cta h2{
+font-size:1.8rem;
+}
+
+}
+
 /* =========================
 SPECIALIST PAGE
 ========================= */
