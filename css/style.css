@@ -1664,6 +1664,30 @@ SERVICES PAGE
     }
 }
 
+.home-video{
+padding:100px 0;
+background:#f8fbff;
+}
+
+.video-wrapper{
+position:relative;
+padding-bottom:56.25%;
+height:0;
+overflow:hidden;
+border-radius:24px;
+box-shadow:0 20px 60px rgba(0,0,0,.12);
+margin-top:40px;
+}
+
+.video-wrapper iframe{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border:none;
+}
+
 
 /* =========================
 REFERRALS PAGE
