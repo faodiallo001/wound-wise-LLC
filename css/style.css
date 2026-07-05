@@ -1744,6 +1744,23 @@ line-height:1.8;
 color:#667085;
 }
 
+.upload-label{
+display:block;
+font-weight:600;
+margin-top:10px;
+margin-bottom:10px;
+color:#0b2d5c;
+}
+
+input[type="file"]{
+padding:18px;
+border:1px solid rgba(11,99,206,.15);
+border-radius:18px;
+background:rgba(255,255,255,.7);
+backdrop-filter:blur(20px);
+cursor:pointer;
+}
+
 /* FORM */
 
 .referral-form-section{
