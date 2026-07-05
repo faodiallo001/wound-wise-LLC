@@ -1761,6 +1761,27 @@ backdrop-filter:blur(20px);
 cursor:pointer;
 }
 
+#file-list{
+margin-top:15px;
+}
+
+#file-list p{
+
+background:rgba(11,99,206,.08);
+
+padding:12px 15px;
+
+border-radius:12px;
+
+margin-bottom:8px;
+
+font-size:14px;
+
+color:#0b2d5c;
+
+font-weight:600;
+}
+
 /* FORM */
 
 .referral-form-section{
