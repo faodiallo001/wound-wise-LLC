@@ -107,3 +107,17 @@ if(nextVisionBtn && prevVisionBtn && visionCards.length > 0){
     });
 
 }
+
+const upload = document.querySelector('input[type="file"]');
+
+upload.addEventListener('change', function(){
+
+if(this.files.length > 3){
+
+alert('Maximum 3 files allowed.');
+
+this.value = '';
+
+}
+
+});
