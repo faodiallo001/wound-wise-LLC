@@ -121,3 +121,36 @@ this.value = '';
 }
 
 });
+
+const fileInput = document.getElementById('documents');
+const fileList = document.getElementById('file-list');
+
+if(fileInput){
+
+fileInput.addEventListener('change', function(){
+
+fileList.innerHTML = '';
+
+if(this.files.length > 3){
+
+alert('Maximum 3 files allowed');
+
+this.value = '';
+
+return;
+
+}
+
+for(let i = 0; i < this.files.length; i++){
+
+const item = document.createElement('p');
+
+item.textContent = '📄 ' + this.files[i].name;
+
+fileList.appendChild(item);
+
+}
+
+});
+
+}
