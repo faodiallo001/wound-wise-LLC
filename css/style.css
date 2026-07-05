@@ -774,6 +774,153 @@ linear-gradient(
     line-height:1.8;
 }
 
+
+/* =========================
+PRIVACY POLICY
+========================= */
+
+.privacy-section{
+padding:120px 0;
+background:
+linear-gradient(
+180deg,
+#ffffff 0%,
+#f8fbff 100%
+);
+}
+
+.privacy-content{
+
+max-width:1000px;
+
+margin:auto;
+
+padding:60px;
+
+border-radius:40px;
+
+background:
+rgba(255,255,255,.75);
+
+backdrop-filter:blur(25px);
+-webkit-backdrop-filter:blur(25px);
+
+border:1px solid rgba(11,99,206,.08);
+
+box-shadow:
+0 25px 60px rgba(11,99,206,.08);
+}
+
+.privacy-content h2{
+
+font-size:48px;
+
+color:#0b2d5c;
+
+margin-bottom:25px;
+}
+
+.privacy-content h3{
+
+font-size:28px;
+
+color:#0b2d5c;
+
+margin-top:45px;
+
+margin-bottom:18px;
+}
+
+.privacy-content p{
+
+font-size:17px;
+
+line-height:1.9;
+
+color:#64748b;
+
+margin-bottom:18px;
+}
+
+.privacy-content strong{
+color:#0b2d5c;
+}
+
+.privacy-content ul{
+
+padding-left:25px;
+
+margin:20px 0 30px;
+}
+
+.privacy-content li{
+
+margin-bottom:12px;
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#64748b;
+}
+
+.privacy-content li::marker{
+color:#d90429;
+}
+
+.privacy-content a{
+
+color:#d90429;
+
+text-decoration:none;
+
+font-weight:700;
+}
+
+.privacy-content a:hover{
+
+color:#ff214f;
+}
+
+.privacy-content:hover{
+
+box-shadow:
+0 30px 80px rgba(11,99,206,.12);
+
+transition:.4s ease;
+}
+
+@media(max-width:950px){
+
+.privacy-section{
+padding:80px 0;
+}
+
+.privacy-content{
+
+padding:35px 25px;
+
+border-radius:30px;
+}
+
+.privacy-content h2{
+
+font-size:34px;
+}
+
+.privacy-content h3{
+
+font-size:24px;
+}
+
+.privacy-content p,
+.privacy-content li{
+
+font-size:16px;
+}
+
+}
+
 /* =========================
    FAQ SECTION
 ========================= */
