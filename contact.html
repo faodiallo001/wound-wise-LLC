@@ -95,23 +95,29 @@
 
             <h3>Send Us a Message</h3>
 
-            <form>
+           <form id="contactForm">
 
-                <input type="text"
-                       placeholder="Full Name"
-                       required>
+               <input
+type="text"
+name="name"
+placeholder="Full Name"
+required>
 
-                <input type="email"
-                       placeholder="Email Address"
-                       required>
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required>
 
-                <input type="tel"
-                       placeholder="Phone Number">
+<input
+type="tel"
+name="phone"
+placeholder="Phone Number">
 
-                <textarea
-                          placeholder="How can we help you?"
-                          rows="6"></textarea>
-
+<textarea
+name="message"
+placeholder="How can we help you?"
+rows="6"></textarea>
                 <button type="submit"
                         class="primary">
                     Send Message
