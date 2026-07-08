@@ -144,3 +144,45 @@ fileList.appendChild(item);
 });
 
 }
+
+const contactForm = document.getElementById('contactForm');
+
+if(contactForm){
+
+contactForm.addEventListener('submit', async function(e){
+
+e.preventDefault();
+
+const formData = new FormData(contactForm);
+
+const data = Object.fromEntries(formData);
+
+const response = await fetch('/api/contact',{
+
+method:'POST',
+
+headers:{
+'Content-Type':'application/json'
+},
+
+body:JSON.stringify(data)
+
+});
+
+if(response.ok){
+
+alert('Message sent successfully.');
+
+contactForm.reset();
+
+}else{
+
+alert('Something went wrong.');
+
+}
+
+});
+
+}
+
+
