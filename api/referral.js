@@ -73,7 +73,7 @@ export default async function handler(req, res) {
 
       from: "onboarding@resend.dev",
 
-      to: "faodiallo001@gmail.com",
+     to: "Woundwisepractice@gmail.com",
 
       subject: "New Patient Referral",
 
