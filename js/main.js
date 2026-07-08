@@ -110,6 +110,8 @@ if(nextVisionBtn && prevVisionBtn && visionCards.length > 0){
 
 const upload = document.querySelector('input[type="file"]');
 
+if(upload){
+
 upload.addEventListener('change', function(){
 
 if(this.files.length > 3){
@@ -121,6 +123,8 @@ this.value = '';
 }
 
 });
+
+}
 
 const fileInput = document.getElementById('documents');
 const fileList = document.getElementById('file-list');
