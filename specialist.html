@@ -190,33 +190,23 @@ Our team provides personalized wound care consultations to help determine the be
 Consultation Request Form
 </h3>
 
-<form>
+<form id="specialistForm">
 
-<input
-type="text"
-placeholder="Full Name"
-required>
+<input type="text" name="fullName" placeholder="Full Name" required>
 
-<input
-type="email"
-placeholder="Email Address"
-required>
+<input type="email" name="email" placeholder="Email Address" required>
 
-<input
-type="tel"
-placeholder="Phone Number"
-required>
+<input type="tel" name="phone" placeholder="Phone Number" required>
 
-<input
-type="text"
-placeholder="City / ZIP Code">
+<input type="text" name="city" placeholder="City / ZIP Code">
 
-<select required>
+<select name="woundType" required>
 
-<option>
+<option value="">
 Select Wound Type
 </option>
 
+    
 <option>
 Traumatic Wound
 </option>
@@ -239,12 +229,12 @@ Not Sure
 
 </select>
 
-<select required>
+<select name="woundDuration" required>
 
-<option>
+<option value="">
 How Long Have You Had This Wound?
 </option>
-
+    
 <option>
 Less Than 1 Month
 </option>
@@ -267,9 +257,9 @@ More Than 12 Months
 
 </select>
 
-<select>
+<select name="painLevel">
 
-<option>
+<option value="">
 Pain Level
 </option>
 
@@ -289,35 +279,44 @@ Severe
 <div class="checkbox-group">
 
 <label>
-<input type="checkbox">
+<input type="checkbox" name="symptoms" value="Pain">
 Pain
 </label>
 
+    
 <label>
-<input type="checkbox">
+<input type="checkbox" name="symptoms" value="Swelling">
 Swelling
 </label>
 
+    
+
 <label>
-<input type="checkbox">
+<input type="checkbox" name="symptoms" value="Redness">
 Redness
 </label>
 
+    
 <label>
-<input type="checkbox">
+<input type="checkbox" name="symptoms" value="Drainage">
 Drainage
 </label>
 
+    
+
 <label>
-<input type="checkbox">
+<input type="checkbox" name="symptoms" value="Odor">
 Odor
 </label>
 
+    
+
 <label>
-<input type="checkbox">
+<input type="checkbox" name="symptoms" value="Slow Healing">
 Slow Healing
 </label>
 
+    
 </div>
 
 <h4>
@@ -327,20 +326,20 @@ Currently Receiving Treatment?
 <div class="radio-group">
 
 <label>
-<input type="radio" name="treatment">
+<input type="radio" name="treatment" value="Yes">
 Yes
 </label>
 
 <label>
-<input type="radio" name="treatment">
+<input type="radio" name="treatment" value="No">
 No
 </label>
 
 </div>
 
-<select>
+<select name="insurance">
 
-<option>
+<option value="">
 Insurance Type
 </option>
 
@@ -367,6 +366,7 @@ Not Sure
 </select>
 
 <textarea
+name="notes"
 rows="6"
 placeholder="Tell us more about your wound care needs...">
 </textarea>
