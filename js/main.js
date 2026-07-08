@@ -209,3 +209,54 @@ alert('Something went wrong.');
 });
 
 }
+
+const specialistForm = document.getElementById('specialistForm');
+
+if(specialistForm){
+
+specialistForm.addEventListener('submit', async function(e){
+
+e.preventDefault();
+
+const symptoms = Array.from(
+this.querySelectorAll('input[name="symptoms"]:checked')
+).map(item => item.value).join(', ');
+
+const formData = {
+fullName: this.fullName.value,
+email: this.email.value,
+phone: this.phone.value,
+city: this.city.value,
+woundType: this.woundType.value,
+woundDuration: this.woundDuration.value,
+painLevel: this.painLevel.value,
+symptoms: symptoms,
+treatment: this.treatment?.value || '',
+insurance: this.insurance.value,
+notes: this.notes.value
+};
+
+try{
+
+const response = await fetch('/api/specialist', {
+method: 'POST',
+headers: {
+'Content-Type': 'application/json'
+},
+body: JSON.stringify(formData)
+});
+
+if(response.ok){
+alert('Consultation request sent successfully.');
+this.reset();
+}else{
+alert('Failed to send consultation request.');
+}
+
+}catch(error){
+alert('Something went wrong.');
+}
+
+});
+
+}
