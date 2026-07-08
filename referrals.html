@@ -271,41 +271,48 @@ Care plans built on proven wound care practices and clinical excellence.
 Submit A Referral
 </h3>
 
-<form>
+<form id="referralForm" enctype="multipart/form-data">
 
 <input
 type="text"
+name="organization"
 placeholder="Referring Organization"
 required>
-
+    
 <input
 type="text"
+name="providerName"
 placeholder="Referring Provider Name"
 required>
+    
 
 <input
 type="tel"
+name="phone"
 placeholder="Phone Number"
 required>
 
 <input
 type="email"
+name="email"
 placeholder="Email Address"
 required>
 
 <input
 type="text"
+name="patientName"
 placeholder="Patient Name">
 
 <input
-type="date">
+type="date"
+name="patientDOB">
 
-<select>
+<select name="woundType">
 
-<option>
+<option value="">
 Wound Type
 </option>
-
+    
 <option>
 Traumatic Wound
 </option>
@@ -332,9 +339,9 @@ Not Sure
 
 </select>
 
-<select>
+<select name="urgency">
 
-<option>
+<option value="">
 Urgency Level
 </option>
 
@@ -353,6 +360,7 @@ Urgent
 </select>
 
 <textarea
+name="clinicalNotes"
 rows="7"
 placeholder="Additional Clinical Information">
 </textarea>
