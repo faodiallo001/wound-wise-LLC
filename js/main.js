@@ -145,7 +145,8 @@ fileList.appendChild(item);
 
 }
 
-const contactForm = document.getElementById('contactForm');
+const contactForm =
+document.getElementById('contactForm');
 
 if(contactForm){
 
@@ -153,9 +154,19 @@ contactForm.addEventListener('submit', async function(e){
 
 e.preventDefault();
 
-const formData = new FormData(contactForm);
+const formData = {
 
-const data = Object.fromEntries(formData);
+name: this.name.value,
+
+email: this.email.value,
+
+phone: this.phone.value,
+
+message: this.message.value
+
+};
+
+try{
 
 const response = await fetch('/api/contact',{
 
@@ -165,7 +176,7 @@ headers:{
 'Content-Type':'application/json'
 },
 
-body:JSON.stringify(data)
+body: JSON.stringify(formData)
 
 });
 
@@ -173,9 +184,15 @@ if(response.ok){
 
 alert('Message sent successfully.');
 
-contactForm.reset();
+this.reset();
 
 }else{
+
+alert('Failed to send message.');
+
+}
+
+}catch(error){
 
 alert('Something went wrong.');
 
@@ -184,5 +201,3 @@ alert('Something went wrong.');
 });
 
 }
-
-
