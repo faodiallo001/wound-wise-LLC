@@ -260,3 +260,53 @@ alert('Something went wrong.');
 });
 
 }
+
+const referralForm = document.getElementById('referralForm');
+
+if(referralForm){
+
+referralForm.addEventListener('submit', async function(e){
+
+e.preventDefault();
+
+const formData = new FormData(referralForm);
+
+try{
+
+const response = await fetch('/api/referral', {
+
+method: 'POST',
+
+body: formData
+
+});
+
+if(response.ok){
+
+alert('Referral sent successfully.');
+
+this.reset();
+
+const fileList = document.getElementById('file-list');
+
+if(fileList){
+fileList.innerHTML = '';
+}
+
+}else{
+
+alert('Failed to send referral.');
+
+}
+
+}catch(error){
+
+console.error(error);
+
+alert('Something went wrong.');
+
+}
+
+});
+
+}
