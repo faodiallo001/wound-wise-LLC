@@ -1,5 +1,6 @@
 import { Resend } from "resend";
 import formidable from "formidable";
+import fs from "fs";
 
 export const config = {
   api: {
@@ -19,8 +20,9 @@ function parseForm(req) {
 
     form.parse(req, (err, fields, files) => {
 
-      if(err){
+      if (err) {
         reject(err);
+        return;
       }
 
       resolve({
@@ -34,9 +36,9 @@ function parseForm(req) {
 
 }
 
-export default async function handler(req, res){
+export default async function handler(req, res) {
 
-  if(req.method !== "POST"){
+  if (req.method !== "POST") {
 
     return res.status(405).json({
       error: "Method not allowed"
@@ -44,9 +46,28 @@ export default async function handler(req, res){
 
   }
 
-  try{
+  try {
 
-    const { fields } = await parseForm(req);
+    const { fields, files } = await parseForm(req);
+
+    const attachments = [];
+
+    if (files.documents) {
+
+      const uploadedFiles = Array.isArray(files.documents)
+        ? files.documents
+        : [files.documents];
+
+      for (const file of uploadedFiles) {
+
+        attachments.push({
+          filename: file.originalFilename,
+          content: fs.readFileSync(file.filepath).toString("base64")
+        });
+
+      }
+
+    }
 
     const data = await resend.emails.send({
 
@@ -55,6 +76,8 @@ export default async function handler(req, res){
       to: "faodiallo001@gmail.com",
 
       subject: "New Patient Referral",
+
+      attachments,
 
       html: `
 
@@ -85,7 +108,9 @@ export default async function handler(req, res){
 
     return res.status(200).json(data);
 
-  }catch(error){
+  } catch (error) {
+
+    console.error(error);
 
     return res.status(500).json({
       error: error.message
